@@ -5,11 +5,11 @@ import java.util.List;
 
 public class Cocktail extends Drink{
 
-    private List<Liquid> liquids;
+    private List<Liquid> liquids = new ArrayList<>();
 
     public Cocktail(String name, List<Liquid> liquids){
         super(name);
-        this.liquids = new ArrayList<>();
+        this.liquids = liquids;
     }
 
     @Override
@@ -31,9 +31,9 @@ public class Cocktail extends Drink{
     public String toString() {
         String liquidsOfCocktail = "";
         for(Liquid l : liquids){
-            liquidsOfCocktail += l.getName();
+            liquidsOfCocktail += " '"+l.getName()+"'";
         }
 
-        return "The cocktail: '" + name + "' consists of: " + liquidsOfCocktail;
+        return "The cocktail '" + name + "' consists of: " + liquidsOfCocktail;
     }
 }
