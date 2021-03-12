@@ -7,6 +7,11 @@ public class Cocktail extends Drink{
 
     private List<Liquid> liquids = new ArrayList<>();
 
+    /**
+     *
+     * @param name name of the cocktail
+     * @param liquids List of liquids which are the ingredients for the cocktail
+     */
     public Cocktail(String name, List<Liquid> liquids){
         super(name);
         this.liquids = liquids;
@@ -17,9 +22,18 @@ public class Cocktail extends Drink{
         return 0;
     }
 
+    /**
+     * Returns the total amount of percentage of a cocktail
+     *
+     * @return total alcohol percentage of all included liquids
+     */
     @Override
     public double getAlcoholPercent() {
-        return 0;
+        double percentage = 0;
+        for (Liquid l : liquids){
+            percentage += l.getAlcoholPercent();
+        }
+        return percentage;
     }
 
     @Override
@@ -34,6 +48,7 @@ public class Cocktail extends Drink{
             liquidsOfCocktail += " '"+l.getName()+"'";
         }
 
-        return "The cocktail '" + name + "' consists of: " + liquidsOfCocktail;
+        return "The cocktail '" + name + "' consists of: " + liquidsOfCocktail +
+                " and has a total percentage of: " + getAlcoholPercent()+" per volume";
     }
 }
