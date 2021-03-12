@@ -10,6 +10,7 @@ public class Main {
         Liquid l = new Liquid("Wein", 0.125, 13);
         Liquid gin = new Liquid("Gin",0.4,37);
         Liquid tonicWater = new Liquid("Tonic Water",0.25,0);
+        Liquid juice = new Liquid("Juice", 0.25, 0);
 
         List<Liquid> liquids = new ArrayList<>();
         liquids.add(gin);
@@ -23,5 +24,9 @@ public class Main {
 
         Drink caipirinha = new Cocktail("Caipirinha",liquids);
         System.out.println(caipirinha);
+
+        Drink strawberryJuice = new FreshJuice("Strawberry", juice);
+        System.out.println(strawberryJuice);
+
     }
 }
