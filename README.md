@@ -1,6 +1,6 @@
 # Drinks Sample 
 
-##Authors 
+## Authors 
 - *Simon Noll* : HotDrink.java
 - *Manuel Seitinger* : Cocktails.java
 - *Helmut Menhart* : FreshJuice.java
