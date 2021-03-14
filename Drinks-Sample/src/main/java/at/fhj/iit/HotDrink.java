@@ -9,7 +9,16 @@ public class HotDrink extends Drink{
     private double temperature;
     private List<Powder> powders = new ArrayList<>();
 
+    /**
+     *
+     * @param name name of the hot beverage
+     * @param liquids List of liquids used in the hot beverage
+     * @param temperature Temperature of the hot drink
+     * @param powders List of powders used in the hot drink
+     */
+
     public HotDrink(String name, List<Liquid> liquids, double temperature, List<Powder> powders){
+        //Constructor for a hot drink
         super(name);
         this.liquids = liquids;
         this.temperature=temperature;
@@ -30,6 +39,7 @@ public class HotDrink extends Drink{
         return false;
     }
     public void makeHotDrink(){
+        // Method to make a hot drink. Prints out lines on the console
         String liquidsInHotDrink = "";
         String powdersInHotDrink = "";
         for(Liquid l : liquids){

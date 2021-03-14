@@ -13,6 +13,13 @@
 - Added some comments to Cocktail
 - Added class FreshJuice.
 - Pimped README.md; Tried out some **markdown** features from [Markdown tutorial](https://www.youtube.com/watch?v=6A5EpqqDOdk "Click for watching ;)")
+- Added class HotDrink
+- Added class Powder
+- Implemented methods to HotDrink
+- Implemented methods to Powder
+- Added comments to HotDrink
+- Added comments to Powder
+
 
 
 
