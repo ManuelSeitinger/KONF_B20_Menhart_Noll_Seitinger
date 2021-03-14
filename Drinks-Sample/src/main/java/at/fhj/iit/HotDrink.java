@@ -39,7 +39,7 @@ public class HotDrink extends Drink{
         return false;
     }
     public void makeHotDrink(){
-        // Method to make a hot drink. Prints out lines on the console
+        // Method to make a hot drink. Prints out the stages to make the drink (using the instance variables of the drink)
         String liquidsInHotDrink = "";
         String powdersInHotDrink = "";
         for(Liquid l : liquids){
