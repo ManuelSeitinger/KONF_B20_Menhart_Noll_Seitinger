@@ -19,6 +19,8 @@
 - Implemented methods to Powder
 - Added comments to HotDrink
 - Added comments to Powder
+- Added dependencies to pom.xml
+- Deleted second README
 
 
 
