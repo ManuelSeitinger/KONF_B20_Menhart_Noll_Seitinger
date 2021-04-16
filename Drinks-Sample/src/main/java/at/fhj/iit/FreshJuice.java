@@ -5,8 +5,18 @@ package at.fhj.iit;
  */
 public class FreshJuice extends Drink {
 
+    /**
+     * is defined by a certain liquid
+     */
     private Liquid l;
 
+    /**
+     * Creates new liquid with given name, volume and
+     * alcoholPercent
+     *
+     * @param name name of freshJuice
+     * @param l name of liquid
+     */
     public FreshJuice(String name, Liquid l) {
         super(name);
         this.l = l;
@@ -22,6 +32,10 @@ public class FreshJuice extends Drink {
         return l.getVolume();
     }
 
+    /**
+     * juices are not alcoholic
+     * @return 0
+     */
     @Override
     public double getAlcoholPercent() {
         return l.getAlcoholPercent();
@@ -38,7 +52,7 @@ public class FreshJuice extends Drink {
 
     /**
      * method allows you to enjoy a juice
-     * @return
+     * @return simulates drinking and returns string ("Glass is empty!")
      */
     public String toString() {
         double v = l.getVolume() * 1000;

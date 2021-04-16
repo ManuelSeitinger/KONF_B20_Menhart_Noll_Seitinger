@@ -25,6 +25,8 @@
 - **Start of exercise 04**
 - Versioned repository --> v1.0
 - Created extended (java) .gitignore
-
-
+- Created branch test_menhart and startig to implement tests...
+- Creating FreshJuiceTest and SimpleDrinkTest
+- @ test_menhart: Tests implemented succesfully - method and line coverage 100%
+ 
 
