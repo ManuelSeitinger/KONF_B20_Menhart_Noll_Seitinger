@@ -21,8 +21,10 @@
 - Added comments to Powder
 - Added dependencies to pom.xml
 - Deleted second README
-
-
+---------
+- **Start of exercise 04**
+- Versioned repository --> v1.0
+- Created extended (java) .gitignore
 
 
 
