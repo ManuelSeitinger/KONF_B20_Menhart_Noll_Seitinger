@@ -28,5 +28,6 @@
 - Created branch test_menhart and startig to implement tests...
 - Creating FreshJuiceTest and SimpleDrinkTest
 - @ test_menhart: Tests implemented succesfully - method and line coverage 100%
+- Merged test_menhart into main
  
 
