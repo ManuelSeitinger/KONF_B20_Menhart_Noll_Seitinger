@@ -3,6 +3,8 @@ package at.fhj.iit;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -20,10 +22,12 @@ public class SimpleDrinkTest {
     /**
      * tests if simpleDrink returns expected volume value
      */
-    @Test
+    @ParameterizedTest
+    @ValueSource(doubles = {0.125, 0.02, 0.250, 0.500, 1.00})
     @DisplayName("testGetVolume")
-    public  void testGetVolume () {
-        assertEquals(0.250, sut.getVolume());
+    public  void testGetVolume (double doubles) {
+        l.setVolume(doubles);
+        assertEquals(doubles, sut.getVolume(), 0.0001);
     }
 
     /**
