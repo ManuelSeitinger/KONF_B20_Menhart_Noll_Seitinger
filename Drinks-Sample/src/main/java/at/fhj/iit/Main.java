@@ -39,6 +39,7 @@ public class Main {
         System.out.println(strawberryJuice);
 
         HotDrink cacao = new HotDrink("Cacao", liquidsInHotDrink, 75, powdersInHotDrink);
-        cacao.makeHotDrink();
+        String makingProcess = cacao.makeHotDrink();
+        System.out.print(makingProcess);
     }
 }
