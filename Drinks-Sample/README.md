@@ -33,5 +33,7 @@
 - Changed return value of method makeHotDrink to string for testing purpose
 - Created branch test_noll
 - Created class HotDrinkTest
+- Created branch test_seitinger
+- Created new test class CocktailTest
  
 
