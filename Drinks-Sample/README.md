@@ -29,5 +29,7 @@
 - Creating FreshJuiceTest and SimpleDrinkTest
 - @ test_menhart: Tests implemented succesfully - method and line coverage 100%
 - Merged test_menhart into main
+- Added java doc comments to HotDrink and Powder
+- Changed return value of method makeHotDrink to string for testing purpose
  
 
