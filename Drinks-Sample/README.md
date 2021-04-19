@@ -40,5 +40,7 @@
 - Merged test_noll to main
 - Created and implemented new test class LiquidTest
 - Merged test_seitinger into main
+- Added documentation to class Cocktail.java
+- Merged changes from test_seitinger into main
  
 
