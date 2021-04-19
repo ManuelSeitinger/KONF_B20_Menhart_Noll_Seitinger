@@ -38,5 +38,7 @@
 - Added comments to HotDrinkTest
 - Created and implemented class PowderTest
 - Merged test_noll to main
+- Created and implemented new test class LiquidTest
+- Merged test_seitinger into main
  
 
