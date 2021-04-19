@@ -35,5 +35,8 @@
 - Created class HotDrinkTest
 - Created branch test_seitinger
 - Created new test class CocktailTest
+- Added comments to HotDrinkTest
+- Created and implemented class PowderTest
+- Merged test_noll to main
  
 
