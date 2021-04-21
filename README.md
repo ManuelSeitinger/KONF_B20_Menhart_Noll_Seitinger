@@ -67,7 +67,7 @@ to strive for 100%
 
 Consider:
 
-![](/home/shoshanna/Dokumente/BSD/2.Semester/Konfigurationsmanagement/Übungen/effortvalue.png)
+![](https://github.com/ManuelSeitinger/KONF_B20_Menhart_Noll_Seitinger/blob/main/pics/effortvalue.png)
 
 For more read this: [click me](https://jeroenmols.com/blog/2017/11/28/coveragproblem/ "your way to interesting article")
 
