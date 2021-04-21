@@ -58,7 +58,7 @@
 
 --> The 100% code coverage problem...
 
-###p.e.
+### p.e.
 - Some getter/setter methods are not used - makes no sense to implement just
 to strive for 100%
 - Use of testing objects constructed in main?
