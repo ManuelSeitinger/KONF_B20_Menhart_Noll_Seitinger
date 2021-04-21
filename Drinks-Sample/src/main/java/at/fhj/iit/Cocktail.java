@@ -5,9 +5,13 @@ import java.util.List;
 
 public class Cocktail extends Drink{
 
+    /**
+     * List which contains all of the liquids used for a cocktail
+     */
     private List<Liquid> liquids = new ArrayList<>();
 
     /**
+     * Constructor for creating a new cocktail object
      *
      * @param name name of the cocktail
      * @param liquids List of liquids which are the ingredients for the cocktail
@@ -36,10 +40,21 @@ public class Cocktail extends Drink{
         return percentage;
     }
 
+    /**
+     * Returns if the cocktail is alcoholic
+     *
+     * @return false
+     */
     @Override
     public boolean isAlcoholic() {
         return false;
     }
+
+    /**
+     * Prints the information of the cocktail
+     *
+     * @return a String displaying the information of a cocktail
+     */
 
     @Override
     public String toString() {

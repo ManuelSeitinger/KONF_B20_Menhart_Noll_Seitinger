@@ -29,5 +29,18 @@
 - Creating FreshJuiceTest and SimpleDrinkTest
 - @ test_menhart: Tests implemented succesfully - method and line coverage 100%
 - Merged test_menhart into main
+- Added java doc comments to HotDrink and Powder
+- Changed return value of method makeHotDrink to string for testing purpose
+- Created branch test_noll
+- Created class HotDrinkTest
+- Created branch test_seitinger
+- Created new test class CocktailTest
+- Added comments to HotDrinkTest
+- Created and implemented class PowderTest
+- Merged test_noll to main
+- Created and implemented new test class LiquidTest
+- Merged test_seitinger into main
+- Added documentation to class Cocktail.java
+- Merged changes from test_seitinger into main
  
 
