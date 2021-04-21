@@ -42,5 +42,5 @@
 - Merged test_seitinger into main
 - Added documentation to class Cocktail.java
 - Merged changes from test_seitinger into main
- 
+- Change directory structure (hopefully) according to maven  
 
