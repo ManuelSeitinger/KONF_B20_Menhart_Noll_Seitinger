@@ -15,7 +15,7 @@ public class FreshJuice extends Drink {
      * alcoholPercent
      *
      * @param name name of freshJuice
-     * @param l name of liquid
+     * @param l type of liquid
      */
     public FreshJuice(String name, Liquid l) {
         super(name);
@@ -34,7 +34,7 @@ public class FreshJuice extends Drink {
 
     /**
      * juices are not alcoholic
-     * @return 0
+     * @return alcoholPercentage (=0)
      */
     @Override
     public double getAlcoholPercent() {
@@ -43,7 +43,7 @@ public class FreshJuice extends Drink {
 
     /**
      * juices are not alcoholic
-     * @return false
+     * @return false (because freshJuices are non-alcoholic)
      */
     @Override
     public boolean isAlcoholic() {
