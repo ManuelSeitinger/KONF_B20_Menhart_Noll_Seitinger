@@ -75,32 +75,32 @@ For more read this: [click me](https://jeroenmols.com/blog/2017/11/28/coveragpro
 
 # javadoc crash course
 
-###Why should you use javadoc?
+### Why should you use javadoc?
 
-####Think of yourself in the future!
+#### Think of yourself in the future!
 If your write code and then look at it in a few months, you will not know your way around. You will not know why you did some things in a certain way. By commenting your
 code you will save yourself time at understanding what certain parts in a program do. 
 
-####Open-Source programs:
+#### Open-Source programs:
 If you write a open-source program and publish it you want people to understand what you have done. If they want to add something to the code or use it, they have to understand it. 
 There are a lot of open-source projects in the world. Just by commenting your code you can stand out of the crowd by telling the user why your code does certain things in another
 or a better way. 
 
-####Become a better programmer!
+#### Become a better programmer!
 As a software developer you are a technician. To become a good technician in the software industry you will have to write good documentation. This is hard to learn. So the 
 best way to learn how to write documentations is by practicing. Start small and become better with the time.
 
-###What to write?
+### What to write?
 
 The first question you have to ask yourself is, what is your target audience. That first step is very important because your target audience specifies what should go into
 your documentation. 
 
-####Target audience: developers vs. users
+#### Target audience: developers vs. users
 Users want to use your code. So, if your program is for end-users your documentation should provide the answer for which problem your program solves. A user doesn't care 
 in which exact way your software solves a program. For Users you should also provide a tutorial. This helps the user getting to know the program and the tools. 
 For developers you should make it easy to understand how your code works. It is also useful to tell developers how to contribute something to your code.
 
-###Basics of javadoc
+### Basics of javadoc
 
 Comments marked with ...
 
