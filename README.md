@@ -47,8 +47,9 @@
 ### New commands used
 
 |Command| Description|
-|:----------:| :----------|
-|git branch <name>| Creating a new branch|
+|:----------:| :----------:|
+|git branch 'name'| Creating a new branch|
+|git checkout ''
 
 -------
 
