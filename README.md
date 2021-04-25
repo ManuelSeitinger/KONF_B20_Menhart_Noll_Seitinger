@@ -43,6 +43,8 @@
 - Added documentation to class Cocktail.java
 - Merged changes from test_seitinger into main
 - Change directory structure (hopefully) according to maven  
+- Edited headlines in README
+- Added table in README
 
 ### New commands used
 
@@ -50,7 +52,7 @@
 |:----------:| :----------:|
 |git branch 'name'| Creating a new branch|
 |git checkout 'name'| Switching between branches|
-
+|git merge| Merging changes into another branch|
 -------
 
 ## *@Testing*
