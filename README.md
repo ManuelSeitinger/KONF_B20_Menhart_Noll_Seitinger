@@ -45,6 +45,7 @@
 - Change directory structure (hopefully) according to maven  
 - Edited headlines in README
 - Added table in README
+- Versioned repository --> v2.0
 
 ### New commands used
 
@@ -82,7 +83,7 @@ For more read this: [click me](https://jeroenmols.com/blog/2017/11/28/coveragpro
 
 ---------
 
-# javadoc crash course
+# Javadoc crash course
 
 ### Why should you use javadoc?
 
