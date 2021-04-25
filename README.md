@@ -46,9 +46,9 @@
 
 ### New commands used
 
-   Command				 Description
---------------		---------------------
-git branch <name>   Creating a new branch
+|     Command	   |	|     Description     |
+|------------------|	|---------------------|	
+|git branch <name> |    |Creating a new branch|
 
 -------
 
