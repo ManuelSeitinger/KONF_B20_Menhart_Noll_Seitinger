@@ -46,6 +46,9 @@
 - Edited headlines in README
 - Added table in README
 - Versioned repository --> v2.0
+_____
+  
+- Added testCheckVolume to LiquidTest
 
 ### New commands used
 

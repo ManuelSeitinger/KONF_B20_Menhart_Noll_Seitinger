@@ -41,6 +41,16 @@ public class LiquidTest {
     @DisplayName("testGetAlcoholPercent")
     public  void testGetAlcoholPercent () { assertEquals(12.5, liquid.getAlcoholPercent()); }
 
-
+    /**
+     * tests if method checkVolume() throws expected exception
+     */
+    @Test
+    @DisplayName("testCheckVolume")
+    public  void  testCheckVolume () {
+    liquid.setVolume(0);
+        assertThrows(IllegalArgumentException.class, () -> {
+            liquid.checkVolume(liquid.getVolume());
+    });
+}
 
 }
