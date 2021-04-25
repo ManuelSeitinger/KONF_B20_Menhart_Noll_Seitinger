@@ -44,6 +44,12 @@
 - Merged changes from test_seitinger into main
 - Change directory structure (hopefully) according to maven  
 
+### New commands used
+
+   Command				 Description
+--------------		---------------------
+git branch <name>   Creating a new branch
+
 -------
 
 ## *@Testing*
