@@ -49,7 +49,7 @@
 |Command| Description|
 |:----------:| :----------:|
 |git branch 'name'| Creating a new branch|
-|git checkout ''
+|git checkout 'name'| Switching between branches|
 
 -------
 
