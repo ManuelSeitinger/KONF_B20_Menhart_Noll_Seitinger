@@ -52,12 +52,14 @@ public class Main {
         sales.add(caipSell);
 
         CashRegister register = new CashRegister();
-        double sumOfPerson = register.calculateSalesOfPerson("Helmut",sales);
-        System.out.println("Sales of <insert name>: "+sumOfPerson);
-        double sumOfDay = register.calculateSalesPerDay("17-05-2021",sales);
-        System.out.println("Sales of <insert day>: "+sumOfDay);
+        String salesPerson = "Simon";
+        String dayOfSale = "17-05-2021";
+        double sumOfPerson = register.calculateSalesOfPerson(salesPerson,sales);
+        System.out.println("Sales of "+ salesPerson +": "+sumOfPerson);
+        double sumOfDay = register.calculateSalesPerDay(dayOfSale,sales);
+        System.out.println("Sales on "+ dayOfSale +": "+sumOfDay);
         double sumOfPersonPerDay = register.calculateSalesOfPersonPerDay("Simon","17-05-2021",sales);
-        System.out.println("Sales of <insert name> on <insert day>: "+sumOfPersonPerDay);
+        System.out.println("Sales of "+ salesPerson +" on "+ dayOfSale +": "+sumOfPersonPerDay);
 
 
 
