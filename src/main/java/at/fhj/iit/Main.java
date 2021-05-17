@@ -32,14 +32,37 @@ public class Main {
         Drink d = new SimpleDrink("Rotwein",20.0,l);
         System.out.println(d);
 
-        Drink caipirinha = new Cocktail("Caipirinha",20,liquids);
+        Cocktail caipirinha = new Cocktail("Caipirinha",20.0,liquids);
         System.out.println(caipirinha);
 
-        Drink strawberryJuice = new FreshJuice("Strawberry", 20,juice);
+        FreshJuice strawberryJuice = new FreshJuice("Strawberry", 20.0,juice);
         System.out.println(strawberryJuice);
 
-        HotDrink cacao = new HotDrink("Cacao", 20 ,liquidsInHotDrink, 75, powdersInHotDrink);
+        HotDrink cacao = new HotDrink("Cacao", 20.0 ,liquidsInHotDrink, 75, powdersInHotDrink);
         String makingProcess = cacao.makeHotDrink();
-        System.out.print(makingProcess);
+        System.out.println(makingProcess);
+
+        ArrayList<String[]> sales = new ArrayList<>();
+        String[] cacaoSell = cacao.sell("Simon","17-05-2021");
+        String[] strawJuiceSell = strawberryJuice.sell("Helmut","17-05-2021");
+        String[] caipSell = caipirinha.sell("Manuel","17-05-2021");
+        sales.add(cacaoSell);
+        sales.add(cacaoSell);
+        sales.add(strawJuiceSell);
+        sales.add(caipSell);
+
+        CashRegister register = new CashRegister();
+        double sumOfPerson = register.calculateSalesOfPerson("Helmut",sales);
+        System.out.println("Sales of <insert name>: "+sumOfPerson);
+        double sumOfDay = register.calculateSalesPerDay("17-05-2021",sales);
+        System.out.println("Sales of <insert day>: "+sumOfDay);
+        double sumOfPersonPerDay = register.calculateSalesOfPersonPerDay("Simon","17-05-2021",sales);
+        System.out.println("Sales of <insert name> on <insert day>: "+sumOfPersonPerDay);
+
+
+
+
+
+
     }
 }

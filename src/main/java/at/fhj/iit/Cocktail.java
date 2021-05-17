@@ -9,7 +9,6 @@ public class Cocktail extends Drink implements ICashRegister{
      * List which contains all of the liquids used for a cocktail
      */
     private List<Liquid> liquids = new ArrayList<>();
-    private double price;
 
     /**
      * Constructor for creating a new cocktail object
@@ -79,11 +78,6 @@ public class Cocktail extends Drink implements ICashRegister{
 
     @Override
     public String[] sell(String salesPerson, String datum) {
-        String[] sell = new String[3];
-        sell[0] = salesPerson;
-        sell[1] = datum;
-        sell[2] = String.valueOf(price);
-
-        return sell;
+        return new String[] {salesPerson,datum,String.valueOf(price)};
     }
 }

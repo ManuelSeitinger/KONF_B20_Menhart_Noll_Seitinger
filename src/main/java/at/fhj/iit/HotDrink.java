@@ -10,7 +10,6 @@ public class HotDrink extends Drink implements ICashRegister{
 
     private List<Liquid> liquids = new ArrayList<>();
     private double temperature;
-    private double price;
     private List<Powder> powders = new ArrayList<>();
 
     /**

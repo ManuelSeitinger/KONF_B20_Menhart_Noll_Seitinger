@@ -9,7 +9,6 @@ public class FreshJuice extends Drink implements ICashRegister{
      * is defined by a certain liquid
      */
     private Liquid l;
-    private double price;
 
     /**
      * Creates new liquid with given name, volume and
