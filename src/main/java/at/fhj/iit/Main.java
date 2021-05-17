@@ -68,16 +68,11 @@ public class Main {
         double sumOfPersonPerDay = register.calculateSalesOfPersonPerDay("Simon","17-05-2021",sales);
         System.out.println("Sales of "+ salesPerson +" on "+ dayOfSale +": "+sumOfPersonPerDay);
 
-        double salesOfNonAlcoholic = register.calculateSalesOfNonAlcoholicDrink(drinks);
-        System.out.println("Sales of non alcoholic drinks: "+salesOfNonAlcoholic);
-        double salesOfMildAlcoholic = register.calculateSalesOfMildAlcoholicDrink(drinks);
-        System.out.println("Sales of mild alcoholic drinks: "+salesOfMildAlcoholic);
-        double salesOfStrongAlcoholic = register.calculateSalesOfStrongAlcoholicDrink(drinks);
-        System.out.println("Sales of strong alcoholic: "+salesOfStrongAlcoholic);
+        double[] sumPerVolume = register.calculateSalesPerVolume(drinks);
+        System.out.println("Sales of non alcoholic drinks: "+sumPerVolume[0]);
+        System.out.println("Sales of mild alcoholic drinks: "+sumPerVolume[1]);
+        System.out.println("Sales of strong alcoholic drinks: "+sumPerVolume[2]);
 
-
-
-
-
+        
     }
 }
