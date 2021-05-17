@@ -9,6 +9,7 @@ public class Cocktail extends Drink{
      * List which contains all of the liquids used for a cocktail
      */
     private List<Liquid> liquids = new ArrayList<>();
+    private double price;
 
     /**
      * Constructor for creating a new cocktail object
@@ -16,9 +17,14 @@ public class Cocktail extends Drink{
      * @param name name of the cocktail
      * @param liquids List of liquids which are the ingredients for the cocktail
      */
-    public Cocktail(String name, List<Liquid> liquids){
-        super(name);
+    public Cocktail(String name, double price ,List<Liquid> liquids){
+        super(name,price);
         this.liquids = liquids;
+    }
+
+    @Override
+    public double getPrice() {
+        return price;
     }
 
     @Override

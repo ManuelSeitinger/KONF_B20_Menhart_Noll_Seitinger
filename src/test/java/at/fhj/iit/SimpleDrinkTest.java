@@ -17,7 +17,7 @@ public class SimpleDrinkTest {
      * inits with SimpleDrink for each test
      */
     @BeforeEach
-    void setup(){ sut = new SimpleDrink("Weißwein", l);  }
+    void setup(){ sut = new SimpleDrink("Weißwein", 20.0,l);  }
 
     /**
      * tests if simpleDrink returns expected volume value

@@ -29,16 +29,16 @@ public class Main {
         System.out.println(l.getName());
         System.out.println(l.getVolume());
 
-        Drink d = new SimpleDrink("Rotwein",l);
+        Drink d = new SimpleDrink("Rotwein",20.0,l);
         System.out.println(d);
 
-        Drink caipirinha = new Cocktail("Caipirinha",liquids);
+        Drink caipirinha = new Cocktail("Caipirinha",20,liquids);
         System.out.println(caipirinha);
 
-        Drink strawberryJuice = new FreshJuice("Strawberry", juice);
+        Drink strawberryJuice = new FreshJuice("Strawberry", 20,juice);
         System.out.println(strawberryJuice);
 
-        HotDrink cacao = new HotDrink("Cacao", liquidsInHotDrink, 75, powdersInHotDrink);
+        HotDrink cacao = new HotDrink("Cacao", 20 ,liquidsInHotDrink, 75, powdersInHotDrink);
         String makingProcess = cacao.makeHotDrink();
         System.out.print(makingProcess);
     }
