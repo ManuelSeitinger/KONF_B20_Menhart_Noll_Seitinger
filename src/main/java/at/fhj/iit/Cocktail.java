@@ -3,7 +3,7 @@ package at.fhj.iit;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cocktail extends Drink{
+public class Cocktail extends Drink implements ICashRegister{
 
     /**
      * List which contains all of the liquids used for a cocktail
@@ -75,5 +75,15 @@ public class Cocktail extends Drink{
 
         return "The cocktail '" + name + "' consists of: " + liquidsOfCocktail +
                 " and has a total percentage of: " + getAlcoholPercent()+" per volume";
+    }
+
+    @Override
+    public String[] sell(String salesPerson, String datum) {
+        String[] sell = new String[3];
+        sell[0] = salesPerson;
+        sell[1] = datum;
+        sell[2] = String.valueOf(price);
+
+        return sell;
     }
 }
