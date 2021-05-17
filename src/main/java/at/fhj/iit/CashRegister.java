@@ -29,7 +29,7 @@ public class CashRegister {
     public double calculateSalesOfMildAlcoholicDrink(ArrayList<Drink> drinks){
         double sum = 0;
         for(int i = 0;i<drinks.size();i++){
-            if(drinks.get(i).getAlcoholPercent() <= 16){
+            if((drinks.get(i).getAlcoholPercent() <= 16) && (drinks.get(i).getAlcoholPercent()!=0)){
                 sum+=drinks.get(i).getPrice();
             }
         }

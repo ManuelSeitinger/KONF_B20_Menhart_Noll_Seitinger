@@ -37,7 +37,7 @@ public class HotDrinkTest {
     @Test
     @DisplayName("testGetVolume")
     public void testGetVolume () {
-        assertEquals(0, hotDrink.getVolume());
+        assertEquals(0.25, hotDrink.getVolume());
     }
 
     /**
