@@ -3,7 +3,7 @@ package at.fhj.iit;
 /**
  * represents a special liquid, which can be used by itself or mixed with other liquids
  */
-public class FreshJuice extends Drink {
+public class FreshJuice extends Drink implements ICashRegister{
 
     /**
      * is defined by a certain liquid
@@ -67,5 +67,11 @@ public class FreshJuice extends Drink {
             v -= 50;
         }
         return "Glass is empty!";
+    }
+
+    @Override
+    public String[] sell(String salesPerson, String datum) {
+        String [] sell = {salesPerson, datum, String.valueOf(price)};
+        return sell;
     }
 }
