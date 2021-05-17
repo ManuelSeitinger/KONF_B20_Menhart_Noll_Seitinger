@@ -15,7 +15,7 @@ public class FreshJuiceTest {
      * inits with FreshJuice for each test
      */
     @BeforeEach
-    void setup(){ sut = new FreshJuice("Orange", juice);  }
+    void setup(){ sut = new FreshJuice("Orange", 20,juice);  }
 
     /**
      * tests if freshJuice returns expected volume value

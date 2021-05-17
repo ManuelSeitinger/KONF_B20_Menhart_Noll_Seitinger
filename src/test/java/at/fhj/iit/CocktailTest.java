@@ -22,7 +22,7 @@ public class CocktailTest {
     public void setup() {
         ingredients.add(gin);
         ingredients.add(tonicWater);
-        cocktail = new Cocktail("GinTonic",ingredients);
+        cocktail = new Cocktail("GinTonic",20,ingredients);
     }
 
     @Test

@@ -28,7 +28,7 @@ public class HotDrinkTest {
         liquidsInHotDrink.add(milk);
         liquidsInHotDrink.add(caramel);
         powdersInHotDrink.add(cacaoPowder);
-        hotDrink = new HotDrink("Cacao", liquidsInHotDrink, 75, powdersInHotDrink);
+        hotDrink = new HotDrink("Cacao", 20,liquidsInHotDrink, 75, powdersInHotDrink);
     }
 
     /**

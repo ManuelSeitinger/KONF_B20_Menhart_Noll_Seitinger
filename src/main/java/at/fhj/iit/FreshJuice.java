@@ -9,6 +9,7 @@ public class FreshJuice extends Drink {
      * is defined by a certain liquid
      */
     private Liquid l;
+    private double price;
 
     /**
      * Creates new liquid with given name, volume and
@@ -17,8 +18,8 @@ public class FreshJuice extends Drink {
      * @param name name of freshJuice
      * @param l type of liquid
      */
-    public FreshJuice(String name, Liquid l) {
-        super(name);
+    public FreshJuice(String name,double price, Liquid l) {
+        super(name,price);
         this.l = l;
     }
 
@@ -30,6 +31,11 @@ public class FreshJuice extends Drink {
     @Override
     public double getVolume() {
         return l.getVolume();
+    }
+
+    @Override
+    public double getPrice() {
+        return price;
     }
 
     /**

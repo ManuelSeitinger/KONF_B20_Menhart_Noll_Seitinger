@@ -10,6 +10,8 @@ public abstract class Drink {
      */
     protected String name;
 
+    protected double price;
+
     /**
      * Creates a Drink object with given name, e.g. juice or orange juice
      *
@@ -17,8 +19,9 @@ public abstract class Drink {
      *
      */
 
-    public Drink(String name) {
+    public Drink(String name, double price) {
         this.name = name;
+        this.price = price;
     }
 
     /**
@@ -27,6 +30,12 @@ public abstract class Drink {
      * @return the volume of drink in liter
      */
     public abstract double getVolume();
+
+    /**
+     *
+     * @return the price of the string
+     */
+    public abstract double getPrice();
 
     /**
      * Calculates and returns the alcohol percentage

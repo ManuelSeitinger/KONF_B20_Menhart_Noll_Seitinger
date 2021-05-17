@@ -9,15 +9,15 @@ public class SimpleDrink extends Drink{
      * uses only one liquid
      */
     protected Liquid l;
-
+    private double price;
     /**
      * Creates a SimpleDrink object with given name and liquid
      *
      * @param name name of drink
      * @param l only one liquid in drink, because it's a simple drink an not e.g. a cocktail
      */
-    SimpleDrink(String name, Liquid l){
-        super(name);
+    SimpleDrink(String name, double price,Liquid l){
+        super(name,price);
         this.l = l;
     }
 
@@ -29,6 +29,11 @@ public class SimpleDrink extends Drink{
     @Override
     public double getVolume() {
         return l.getVolume();
+    }
+
+    @Override
+    public double getPrice() {
+        return price;
     }
 
     /**
