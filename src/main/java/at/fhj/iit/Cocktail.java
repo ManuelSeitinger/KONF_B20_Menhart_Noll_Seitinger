@@ -29,7 +29,11 @@ public class Cocktail extends Drink{
 
     @Override
     public double getVolume() {
-        return 0;
+        double volume = 0;
+        for(Liquid l : liquids){
+            volume += l.getVolume();
+        }
+        return volume;
     }
 
     /**
@@ -53,7 +57,7 @@ public class Cocktail extends Drink{
      */
     @Override
     public boolean isAlcoholic() {
-        return false;
+        return true;
     }
 
     /**

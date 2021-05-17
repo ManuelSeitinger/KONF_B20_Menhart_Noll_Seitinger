@@ -7,8 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("Testing Cocktail Implementation")
 public class CocktailTest {
@@ -29,7 +28,7 @@ public class CocktailTest {
     @Test
     @DisplayName("testGetVolume")
     public void testGetVolume() {
-        assertEquals(0, cocktail.getVolume());
+        assertEquals(0.65, cocktail.getVolume());
     }
 
     @Test
@@ -41,7 +40,7 @@ public class CocktailTest {
     @Test
     @DisplayName("testIsAlcoholic")
     public void testIsAlcoholic() {
-        assertFalse(cocktail.isAlcoholic());
+        assertTrue(cocktail.isAlcoholic());
     }
 
 
