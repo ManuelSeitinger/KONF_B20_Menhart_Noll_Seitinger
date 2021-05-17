@@ -5,10 +5,36 @@ import java.util.ArrayList;
 public class CashRegister {
 
 
-    /*public double calculateSalesPerVolume(ArrayList<String[]> sales){
-
+    public double calculateSalesOfNonAlcoholicDrink(ArrayList<Drink> drinks){
+        double sum = 0;
+        for(int i = 0;i<drinks.size();i++){
+            if(drinks.get(i).getAlcoholPercent() == 0){
+                sum+=drinks.get(i).getPrice();
+            }
+        }
+        return sum;
     }
-    */
+
+    public double calculateSalesOfMildAlcoholicDrink(ArrayList<Drink> drinks){
+        double sum = 0;
+        for(int i = 0;i<drinks.size();i++){
+            if(drinks.get(i).getAlcoholPercent() <= 16){
+                sum+=drinks.get(i).getPrice();
+            }
+        }
+        return sum;
+    }
+
+    public double calculateSalesOfStrongAlcoholicDrink(ArrayList<Drink> drinks){
+        double sum = 0;
+        for(int i = 0;i<drinks.size();i++){
+            if(drinks.get(i).getAlcoholPercent() > 16){
+                sum+=drinks.get(i).getPrice();
+            }
+        }
+        return sum;
+    }
+
 
     /**
      *  Calculates the sales of a certain day

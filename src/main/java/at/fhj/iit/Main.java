@@ -32,15 +32,22 @@ public class Main {
         Drink d = new SimpleDrink("Rotwein",20.0,l);
         System.out.println(d);
 
-        Cocktail caipirinha = new Cocktail("Caipirinha",20.0,liquids);
+        Drink caipirinha = new Cocktail("Caipirinha",20.0,liquids);
         System.out.println(caipirinha);
 
-        FreshJuice strawberryJuice = new FreshJuice("Strawberry", 20.0,juice);
+        Drink strawberryJuice = new FreshJuice("Strawberry", 20.0,juice);
         System.out.println(strawberryJuice);
+
+        Drink cacao2 = new HotDrink("Cacao", 20.0 ,liquidsInHotDrink, 75, powdersInHotDrink);
 
         HotDrink cacao = new HotDrink("Cacao", 20.0 ,liquidsInHotDrink, 75, powdersInHotDrink);
         String makingProcess = cacao.makeHotDrink();
         System.out.println(makingProcess);
+
+        ArrayList<Drink> drinks = new ArrayList<>();
+        drinks.add(caipirinha);
+        drinks.add(strawberryJuice);
+        drinks.add(cacao2);
 
         ArrayList<String[]> sales = new ArrayList<>();
         String[] cacaoSell = cacao.sell("Simon","17-05-2021");
@@ -61,6 +68,12 @@ public class Main {
         double sumOfPersonPerDay = register.calculateSalesOfPersonPerDay("Simon","17-05-2021",sales);
         System.out.println("Sales of "+ salesPerson +" on "+ dayOfSale +": "+sumOfPersonPerDay);
 
+        double salesOfNonAlcoholic = register.calculateSalesOfNonAlcoholicDrink(drinks);
+        System.out.println("Sales of non alcoholic drinks: "+salesOfNonAlcoholic);
+        double salesOfMildAlcoholic = register.calculateSalesOfMildAlcoholicDrink(drinks);
+        System.out.println("Sales of mild alcoholic drinks: "+salesOfMildAlcoholic);
+        double salesOfStrongAlcoholic = register.calculateSalesOfStrongAlcoholicDrink(drinks);
+        System.out.println("Sales of strong alcoholic: "+salesOfStrongAlcoholic);
 
 
 

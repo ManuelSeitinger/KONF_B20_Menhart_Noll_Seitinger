@@ -87,11 +87,11 @@ public class HotDrink extends Drink implements ICashRegister{
      * Takes two parameters and returns a String[].
      *
      * @param salesPerson The name of the drinks seller.
-     * @param datum The date where the drink is sold.
+     * @param date The date where the drink is sold.
      * @return A String[] where the third value is the price of the drink.
      */
     @Override
-    public String[] sell(String salesPerson, String datum) {
-        return new String[] {salesPerson, datum, String.valueOf(price)};
+    public String[] sell(String salesPerson, String date) {
+        return new String[] {salesPerson, date, String.valueOf(price)};
     }
 }
