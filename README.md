@@ -46,8 +46,16 @@
 - Edited headlines in README
 - Added table in README
 - Versioned repository --> v2.0
+
+**Start of exercise 06**
+- Added new attribute to a Drink
+- Created new branch cash_register
+- Added new method in the abstract class Drink
+- Added new class CashRegister and implemented methods
+- Added some new output in class Main
+
 _____
-  
+
 - Added testCheckVolume to LiquidTest
 
 ### New commands used
