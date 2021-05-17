@@ -4,6 +4,23 @@ import java.util.ArrayList;
 
 public class CashRegister {
 
+    public double[] calculateSalesPerVolume(ArrayList<Drink> drinks){
+        double sumNonAlcoholic = 0;
+        double sumMildAlcoholic = 0;
+        double sumStrongAlcoholic = 0;
+
+        for(int i = 0;i<drinks.size();i++){
+            if(drinks.get(i).getAlcoholPercent() == 0 ){
+                sumNonAlcoholic += drinks.get(i).getPrice();
+            }else if(drinks.get(i).getAlcoholPercent() <= 16){
+                sumMildAlcoholic += drinks.get(i).getPrice();
+            }else{
+                sumStrongAlcoholic += drinks.get(i).getPrice();
+            }
+        }
+        return new double[] {sumNonAlcoholic,sumMildAlcoholic,sumStrongAlcoholic};
+    }
+
     /**
      * Calculates the sales of non alcohol drinks
      *
