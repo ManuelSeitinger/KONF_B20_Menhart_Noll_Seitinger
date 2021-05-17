@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Represents a hot drink. The drink can be made using liquids and powders. The drink has a certain temperature.
  */
-public class HotDrink extends Drink{
+public class HotDrink extends Drink implements ICashRegister{
 
     private List<Liquid> liquids = new ArrayList<>();
     private double temperature;
@@ -30,13 +30,21 @@ public class HotDrink extends Drink{
 
     /**
      * Returns the volume of the drink.
-     * @return 0
+     * @return Volume of the drink. Is calculated from the volume of all the liquids in the drink.
      */
     @Override
     public double getVolume() {
-        return 0;
+        double volume = 0;
+        for(Liquid l : liquids){
+            volume += l.getVolume();
+        }
+        return volume;
     }
 
+    /**
+     * Returns the price of the hot drink.
+     * @return double price
+     */
     @Override
     public double getPrice() {
         return price;
@@ -44,7 +52,7 @@ public class HotDrink extends Drink{
 
     /**
      * Returns the alcohol percent of the drink.
-     * @return 0
+     * @return 0 Because a hot drink is never alcoholic.
      */
     @Override
     public double getAlcoholPercent() {
@@ -53,7 +61,7 @@ public class HotDrink extends Drink{
 
     /**
      * Returns a boolean if the drink is alcoholic.
-     * @return false
+     * @return false Because a hot drink is never alcoholic-
      */
     @Override
     public boolean isAlcoholic() {
@@ -74,5 +82,17 @@ public class HotDrink extends Drink{
             powdersInHotDrink += " '"+p.getName()+"'";
         }
         return "Starting the oven\nMixing "+liquidsInHotDrink+" with"+powdersInHotDrink+"\nBring the temperature to "+temperature+" degrees celsius\nEnjoy your "+name;
+    }
+
+    /**
+     * Takes two parameters and returns a String[].
+     *
+     * @param salesPerson The name of the drinks seller.
+     * @param datum The date where the drink is sold.
+     * @return A String[] where the third value is the price of the drink.
+     */
+    @Override
+    public String[] sell(String salesPerson, String datum) {
+        return new String[] {salesPerson, datum, String.valueOf(price)};
     }
 }
