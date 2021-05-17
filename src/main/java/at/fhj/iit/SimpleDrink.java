@@ -59,6 +59,13 @@ public class SimpleDrink extends Drink{
         return false;
     }
 
+    /**
+     * Gives information about the sale of a drink
+     *
+     * @param salesPerson name of the person who sells the drink
+     * @param date date when the drink was sold
+     * @return an array containing the information of the sale
+     */
     @Override
     public String[] sell(String salesPerson, String date) {
         return new String[] {salesPerson,date,String.valueOf(price)};

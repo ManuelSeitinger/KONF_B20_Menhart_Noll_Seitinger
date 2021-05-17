@@ -4,7 +4,12 @@ import java.util.ArrayList;
 
 public class CashRegister {
 
-
+    /**
+     * Calculates the sales of non alcohol drinks
+     *
+     * @param drinks List of all drinks which were sold
+     * @return sum of sales
+     */
     public double calculateSalesOfNonAlcoholicDrink(ArrayList<Drink> drinks){
         double sum = 0;
         for(int i = 0;i<drinks.size();i++){
@@ -15,6 +20,12 @@ public class CashRegister {
         return sum;
     }
 
+    /**
+     * Calculates the sales of mild alcohol drinks
+     *
+     * @param drinks List of all drinks which were sold
+     * @return sum of sales
+     */
     public double calculateSalesOfMildAlcoholicDrink(ArrayList<Drink> drinks){
         double sum = 0;
         for(int i = 0;i<drinks.size();i++){
@@ -25,6 +36,12 @@ public class CashRegister {
         return sum;
     }
 
+    /**
+     * Calculates the sales of strong alcohol drinks
+     *
+     * @param drinks List of all drinks which were sold
+     * @return sum of sales
+     */
     public double calculateSalesOfStrongAlcoholicDrink(ArrayList<Drink> drinks){
         double sum = 0;
         for(int i = 0;i<drinks.size();i++){
