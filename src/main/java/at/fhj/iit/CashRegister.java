@@ -4,6 +4,14 @@ import java.util.ArrayList;
 
 public class CashRegister {
 
+    /**
+     * Calculates the sales of a drink, dependent on the content of alcohol. A strong alcoholic drink is defined as a drink,
+     * which has a alcohol percentage higher than 16, a mild alcoholic drink is defined as a drink which has a alcohol percentage lower or equal
+     * to 16. The alcohol percentage of a non-alcoholic drink equals 0.
+     *
+     * @param drinks List of all drinks which were sold
+     * @return double [] with summarized sales, distinguished by alcohol percentage level
+     */
     public double[] calculateSalesPerVolume(ArrayList<Drink> drinks){
         double sumNonAlcoholic = 0;
         double sumMildAlcoholic = 0;
@@ -38,8 +46,8 @@ public class CashRegister {
     }
 
     /**
-     * Calculates the sales of mild alcohol drinks. A mid alcoholic drink is defined as a drink which has a alcohol percentage lower or equal to 16. A drink
-     * with 0 percent alcohol is not mid alcoholic
+     * Calculates the sales of mild alcohol drinks. A mild alcoholic drink is defined as a drink which has a alcohol percentage lower or equal to 16. A drink
+     * with 0 percent alcohol is not mild alcoholic
      *
      * @param drinks List of all drinks which were sold
      * @return sum of sales

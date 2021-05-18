@@ -53,13 +53,8 @@
 - Added new method in the abstract class Drink
 - Added new class CashRegister and implemented methods
 - Added some new output in class Main
-- Added corrections to HotDrinkTest
-- Created CashRegisterTest
-- Implemented tests for CashRegister
-- Fixed problems in CashRegister
-- Added javadoc to CashRegisterTest
-- Fixed javadoc in CashRegister 
-- Extended and fixed javadoc in HotDrink
+- Implemented ICashRegister sell() in class FreshJuice
+- Added testCalculateSalesPerVolume() to CashRegisterTest class
 
 _____
 
@@ -95,7 +90,7 @@ to strive for 100%
 
 Consider:
 
-![](https://github.com/ManuelSeitinger/KONF_B20_Menhart_Noll_Seitinger/blob/main/pics/effortvalue.png)
+![](src/site/ressources/effortvalue.png)
 
 For more read this: [click me](https://jeroenmols.com/blog/2017/11/28/coveragproblem/ "your way to interesting article")
 

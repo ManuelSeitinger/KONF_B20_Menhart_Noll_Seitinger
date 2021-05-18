@@ -126,4 +126,18 @@ public class CashRegisterTest {
     public void testCalculateSalesOfPersonPerDay(){
         assertEquals(40.0, cashRegister.calculateSalesOfPersonPerDay(salesPerson3, "17-05-2021", sales));
     }
+
+    /**
+     * Tests if the method calculateSalesPerVolume() returns the expected value. The method returns a double array consisting of {sumNonAlcoholic,sumMildAlcoholic,sumStrongAlcoholic}.
+     * As supposed from the initiating values above, the expected values are saved in the testIfTrue array and compared with the actual return value of method
+     * @see CashRegister
+     */
+    @Test
+    @DisplayName("testCalculateSalesPerVolume")
+    public void testCalculateSalesPerVolume(){
+        double [] testIfTrue = {80.0, 0.0, 40.0};
+        assertArrayEquals(testIfTrue, cashRegister.calculateSalesPerVolume(drinks));
+    }
+
+
 }

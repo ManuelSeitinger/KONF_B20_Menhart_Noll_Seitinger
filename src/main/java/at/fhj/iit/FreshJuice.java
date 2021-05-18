@@ -77,7 +77,6 @@ public class FreshJuice extends Drink implements ICashRegister{
      */
     @Override
     public String[] sell(String salesPerson, String date) {
-        String [] sell = {salesPerson, date, String.valueOf(price)};
-        return sell;
+        return new String [] {salesPerson, date, String.valueOf(price)};
     }
 }
