@@ -38,7 +38,8 @@ public class CashRegister {
     }
 
     /**
-     * Calculates the sales of mild alcohol drinks
+     * Calculates the sales of mild alcohol drinks. A mid alcoholic drink is defined as a drink which has a alcohol percentage lower or equal to 16. A drink
+     * with 0 percent alcohol is not mid alcoholic
      *
      * @param drinks List of all drinks which were sold
      * @return sum of sales
@@ -54,7 +55,7 @@ public class CashRegister {
     }
 
     /**
-     * Calculates the sales of strong alcohol drinks
+     * Calculates the sales of strong alcohol drinks. A strong alcoholic drink is defined as a drink which has a alcohol percentage higher then 16
      *
      * @param drinks List of all drinks which were sold
      * @return sum of sales

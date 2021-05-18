@@ -57,6 +57,9 @@
 - Created CashRegisterTest
 - Implemented tests for CashRegister
 - Fixed problems in CashRegister
+- Added javadoc to CashRegisterTest
+- Fixed javadoc in CashRegister 
+- Extended and fixed javadoc in HotDrink
 
 _____
 

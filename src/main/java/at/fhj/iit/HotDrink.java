@@ -28,7 +28,7 @@ public class HotDrink extends Drink implements ICashRegister{
     }
 
     /**
-     * Returns the volume of the drink.
+     * Returns the volume of the drink using a list of liquids which are in the drink
      * @return Volume of the drink. Is calculated from the volume of all the liquids in the drink.
      */
     @Override

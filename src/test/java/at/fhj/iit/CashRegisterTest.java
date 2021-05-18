@@ -30,7 +30,7 @@ public class CashRegisterTest {
     CashRegister cashRegister;
 
     /**
-     * Before every test setup() is performed.
+     * Before every test setup() is performed to ensure that the objects are not influenced from tests before.
      */
     @BeforeEach
     public void setup(){
@@ -61,7 +61,9 @@ public class CashRegisterTest {
     }
 
     /**
-     * Tests if calculateSalesOfNonAlcoholicDrink() returns the expected value.
+     * Tests if calculateSalesOfNonAlcoholicDrink() returns the expected value. The method takes a list of objects from type Drink() and calculates the sum of the prices of drinks with
+     * alcohol percentage 0. In this test scenario I know that there are 4 not alcoholic drinks in the list which each costs 20.0 the expected outcome from the method is 80.0
+     * @see CashRegister
      */
     @Test
     @DisplayName("testCalculateSalesOfNonAlcoholicDrink")
@@ -69,30 +71,56 @@ public class CashRegisterTest {
         assertEquals(80.0, cashRegister.calculateSalesOfNonAlcoholicDrink(drinks));
     }
 
+    /**
+     * Tests if the method calculateSalesOfMildAlcoholicDrink() returns the expected value. The method calculates the sum of the prices of all drinks in a list where the alcohol percentage is lower
+     * then 16 and not 0. In the test list there are no such drinks so the expected outcome is 0.0
+     * @see CashRegister
+     */
     @Test
     @DisplayName("testCalculateSalesOfMildAlcoholicDrink")
     public void testCalculateSalesOfMildAlcoholicDrink(){
         assertEquals(0.0, cashRegister.calculateSalesOfMildAlcoholicDrink(drinks));
     }
 
+    /**
+     * Tests if the method calculateSalesOfStrongAlcoholicDrink() returns the expected value. The method calculates the sum of the prices of all drinks in a list with a alcohol percentage
+     * higher then 16. There are 2 drinks in the list which both cost 20.0 so the expected outcome value is 40.0
+     * @see CashRegister
+     */
     @Test
     @DisplayName("testCalculateSalesOfStrongAlcoholicDrink")
     public void testCalculateSalesOfStrongAlcoholicDrink(){
         assertEquals(40.0, cashRegister.calculateSalesOfStrongAlcoholicDrink(drinks));
     }
 
+    /**
+     * Tests if the method calculateSalesPerDay() returns the expected value. The method calculates the sales of a given day using a list of sales. The list is from the type String[] in which
+     * the name of the salesperson, the date of the trade and the name of the sold drink is given. As all trades in the test sales list were made on 17-05-2021 and there are 6 drinks sold each for 20.0
+     * the expected outcome value is 120.0
+     * @see CashRegister
+     */
     @Test
     @DisplayName("testCalculateSalesPerDay")
     public void testCalculateSalesPerDay(){
         assertEquals(120.0, cashRegister.calculateSalesPerDay("17-05-2021", sales));
     }
 
+    /**
+     * Tests if the method calculateSalesOfPerson returns the expected value. The method takes a list of sales and the name of the salesperson and checks how many sales the given person made.
+     * As every person in the test case made 2 sales for each 20.0 the expected outcome value is 40.0
+     * @see CashRegister
+     */
     @Test
     @DisplayName("testCalculateSalesOfPerson")
     public void testCalculateSalesOfPerson(){
         assertEquals(40.0, cashRegister.calculateSalesOfPerson(salesPerson2, sales));
     }
 
+    /**
+     * Tests if the method calculateSalesOfPersonPerDay() returns the expected value. The method takes the name of a salesperson, a date in form of a String and a list of sales. Then the method checks how
+     * many sales the given salesperson made on the given date. As all salesperson made 2 trades each 20.0 on one day the expected outcome value is 40.0
+     * @see CashRegister
+     */
     @Test
     @DisplayName("testCalculateSalesOfPersonPerDay")
     public void testCalculateSalesOfPersonPerDay(){
