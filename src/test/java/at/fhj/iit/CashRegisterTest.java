@@ -128,7 +128,7 @@ public class CashRegisterTest {
     }
 
     /**
-     * Tests if the method calculateSalesPerVolume() returns the expected value. The method returns a double array consisting of {sumNonAlcoholic,sumMildAlcoholic,sumStrongAlcoholic}.
+     * Tests if the method calculateSalesPerVolume() returns the expected value. The method returns a double array with the double[] {sumNonAlcoholic,sumMildAlcoholic,sumStrongAlcoholic}.
      * As supposed from the initiating values above, the expected values are saved in the testIfTrue array and compared with the actual return value of method
      * @see CashRegister
      */
