@@ -9,7 +9,6 @@ public abstract class Drink {
      * name of the drink, so it's easier to identify drink
      */
     protected String name;
-
     protected double price;
 
     /**
@@ -50,4 +49,13 @@ public abstract class Drink {
      * @return true when alcoholic liquids are present, otherwise false
      */
     public abstract boolean isAlcoholic();
+
+    /**
+     * Gives information about the sale of a drink
+     *
+     * @param salesPerson name of the person who sells the drink
+     * @param date date when the drink was sold
+     * @return an array containing the information of the sale
+     */
+    public abstract String[] sell(String salesPerson, String date);
 }

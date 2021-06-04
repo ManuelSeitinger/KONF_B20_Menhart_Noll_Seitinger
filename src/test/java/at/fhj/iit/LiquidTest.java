@@ -24,7 +24,8 @@ public class LiquidTest {
     @Test
     @DisplayName("testGetName")
     public  void testGetName () {
-        assertEquals("Wein", liquid.getName());
+        liquid.setName("Jägermeister");
+        assertEquals("Jägermeister", liquid.getName());
     }
 
     /**

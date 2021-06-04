@@ -1,4 +1,4 @@
-<project name="Calculator Documentation Demo">
+<project name="Have a Drink with Seitinger_Noll_Menhart">
 	<publishDate position="right"/>
 	<version position="left"/>
 	<body>
@@ -6,6 +6,8 @@
 		<menu name="Overview">
 			<item name="Introduction" href="index.html" />
 			<item name="README" href="README.html" />
+			<item name="Tutorial" href="Tutorial.html" />
+			<item name="Testcoverage" href="Testcoverage.html" />
 		</menu>
 		<menu ref="reports" />
 		<menu ref="parent" />

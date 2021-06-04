@@ -3,13 +3,12 @@ package at.fhj.iit;
 /**
  * represents a special liquid, which can be used by itself or mixed with other liquids
  */
-public class FreshJuice extends Drink {
+public class FreshJuice extends Drink implements ICashRegister{
 
     /**
      * is defined by a certain liquid
      */
     private Liquid l;
-    private double price;
 
     /**
      * Creates new liquid with given name, volume and
@@ -67,5 +66,17 @@ public class FreshJuice extends Drink {
             v -= 50;
         }
         return "Glass is empty!";
+    }
+
+    /**
+     * Gives information about the sale of a drink
+     *
+     * @param salesPerson name of the person who sells the drink
+     * @param date date when the drink was sold
+     * @return an array containing the information of the sale
+     */
+    @Override
+    public String[] sell(String salesPerson, String date) {
+        return new String [] {salesPerson, date, String.valueOf(price)};
     }
 }

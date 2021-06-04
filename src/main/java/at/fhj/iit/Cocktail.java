@@ -9,7 +9,6 @@ public class Cocktail extends Drink{
      * List which contains all of the liquids used for a cocktail
      */
     private List<Liquid> liquids = new ArrayList<>();
-    private double price;
 
     /**
      * Constructor for creating a new cocktail object
@@ -65,7 +64,6 @@ public class Cocktail extends Drink{
      *
      * @return a String displaying the information of a cocktail
      */
-
     @Override
     public String toString() {
         String liquidsOfCocktail = "";
@@ -75,5 +73,17 @@ public class Cocktail extends Drink{
 
         return "The cocktail '" + name + "' consists of: " + liquidsOfCocktail +
                 " and has a total percentage of: " + getAlcoholPercent()+" per volume";
+    }
+
+     /**
+     * Gives information about the sale of a drink
+     *
+     * @param salesPerson name of the person who sells the drink
+     * @param date date when the drink was sold
+     * @return an array containing the information of the sale
+     */
+    @Override
+    public String[] sell(String salesPerson, String date) {
+        return new String[] {salesPerson,date,String.valueOf(price)};
     }
 }

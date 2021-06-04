@@ -46,8 +46,22 @@
 - Edited headlines in README
 - Added table in README
 - Versioned repository --> v2.0
+
+**Start of exercise 06**
+- Pronounced discussion of how to meet requirements of last exercise
+- Aggreed on implemeting interface ICashRegister
+- Added new attribute to a Drink
+- Created new branch cash_register
+- Added new method in the abstract class Drink
+- Added new class CashRegister and implemented methods
+- Added some new output in class Main
+- Implemented ICashRegister sell() in class FreshJuice
+- Added testCalculateSalesPerVolume() to CashRegisterTest class
+- Already approaching pretty good coverage:
+
+![](src/site/ressources/coverage1805.png)
 _____
-  
+
 - Added testCheckVolume to LiquidTest
 
 ### New commands used
@@ -80,7 +94,8 @@ to strive for 100%
 
 Consider:
 
-![](https://github.com/ManuelSeitinger/KONF_B20_Menhart_Noll_Seitinger/src/site/ressources/effortvalue.png)
+![](src/site/ressources/effortvalue.png)
+
 
 For more read this: [click me](https://jeroenmols.com/blog/2017/11/28/coveragproblem/ "your way to interesting article")
 
@@ -147,4 +162,6 @@ Include tags in the following order:
 - [oracle / javadoc](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html)
 - [markdown](https://www.markdownguide.org/cheat-sheet)
 - [markdown (video)](https://www.youtube.com/watch?v=6A5EpqqDOdk)
+- [readme](https://www.makeareadme.com/)
 - [beginner guide for javadoc](https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/)
+- [git](https://chris.beams.io/posts/git-commit/#seven-rules)
