@@ -63,6 +63,9 @@
 _____
 
 - Added testCheckVolume to LiquidTest
+- Finalizing project --> merged cash_register into main, solved minor merge-conflict, added tag 3.0 and push!!
+
+
 
 ### New commands used
 
